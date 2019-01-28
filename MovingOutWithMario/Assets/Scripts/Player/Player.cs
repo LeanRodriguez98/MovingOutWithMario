@@ -61,7 +61,7 @@ public class Player : MonoBehaviour {
     {
 
         inputDataPlayer1.horizontalAxis = "HorizontalP1";
-        inputDataPlayer1.verticalAxis = "VerticalP2";
+        inputDataPlayer1.verticalAxis = "VerticalP1";
         inputDataPlayer1.actionButon = "ActionP1";
 
         inputDataPlayer2.horizontalAxis = "HorizontalP2";
