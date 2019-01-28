@@ -57,6 +57,7 @@ public class Player : MonoBehaviour {
     private Rigidbody2D rb;
 
     private float pickUpTimer;
+    private float pickUpedObjectWeight;
     private void Awake()
     {
 
@@ -109,28 +110,33 @@ public class Player : MonoBehaviour {
                 }
                 break;
             case PlayerStates.HOLDING_ITEM:
-                /*Movement(objectToPickUp.weight);
-                DropItem();*/
+                Movement(pickUpedObjectWeight);
+                //DropItem();
                 break;
             case PlayerStates.PICKING_UP:
-                PickUp();
                 if (!grabber.canPickUp)
                 {
                     state = PlayerStates.NOT_HOLDING_ITEM;
                 }
+                PickUp();
+
                 break;
         }
     }
 
     public void PickUp()
     {
-        Debug.Log(playerData.playerNumber);
         if (Input.GetButton(playerData.actionButon))
         {
             pickUpTimer += Time.deltaTime;
             if (pickUpTimer >= grabber.objectToPickUp.timeToPickUp)
             {
+                pickUpTimer = 0;
+                state = PlayerStates.HOLDING_ITEM;
+                animator.runtimeAnimatorController = controllerWithBox;
+                pickUpedObjectWeight = grabber.objectToPickUp.Weight;
                 grabber.PickUpObject();
+
             }
         }
         else if (Input.GetButtonUp(playerData.actionButon))

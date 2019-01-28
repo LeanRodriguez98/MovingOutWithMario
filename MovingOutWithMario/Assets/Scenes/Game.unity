@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameToDisplay: biblioteca
-  Weight: 3
+  Weight: 9.5
   score: 5
   timeToPickUp: 5
   BeingPickedUp: 0
