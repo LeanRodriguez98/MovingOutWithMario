@@ -50,13 +50,13 @@ public class Player : MonoBehaviour {
     public RuntimeAnimatorController controllerWithOutBox;
     public RuntimeAnimatorController controllerWithBox;
 
-    public GameObject grabberPos;
+    public GrabberPoint grabber;
     public float grabberOffsetX = 0.15f;
     public float grabberOffsetY = 0.1f;
 
     private Rigidbody2D rb;
 
-
+    private float pickUpTimer;
     private void Awake()
     {
 
@@ -91,7 +91,9 @@ public class Player : MonoBehaviour {
         animator.runtimeAnimatorController = controllerWithOutBox;
 
         rb = GetComponent<Rigidbody2D>();
+        grabber.player = this;
 
+        pickUpTimer = 0;
     }
 
     // Update is called once per frame
@@ -100,19 +102,41 @@ public class Player : MonoBehaviour {
         {
             case PlayerStates.NOT_HOLDING_ITEM:
                 Movement(0);
-                /*
-                if (Input.GetButton("Action") && pickUpTrigger.CanPickUpObj)
+                
+                if (Input.GetButton(playerData.actionButon) && grabber.canPickUp)
                 {
                     state = PlayerStates.PICKING_UP;
-                }*/
+                }
                 break;
             case PlayerStates.HOLDING_ITEM:
                 /*Movement(objectToPickUp.weight);
                 DropItem();*/
                 break;
             case PlayerStates.PICKING_UP:
-                //PickUp();
+                PickUp();
+                if (!grabber.canPickUp)
+                {
+                    state = PlayerStates.NOT_HOLDING_ITEM;
+                }
                 break;
+        }
+    }
+
+    public void PickUp()
+    {
+        Debug.Log(playerData.playerNumber);
+        if (Input.GetButton(playerData.actionButon))
+        {
+            pickUpTimer += Time.deltaTime;
+            if (pickUpTimer >= grabber.objectToPickUp.timeToPickUp)
+            {
+                grabber.PickUpObject();
+            }
+        }
+        else if (Input.GetButtonUp(playerData.actionButon))
+        {
+            state = PlayerStates.NOT_HOLDING_ITEM;
+            pickUpTimer = 0;
         }
     }
 
@@ -126,6 +150,7 @@ public class Player : MonoBehaviour {
         {
             movement.Normalize();
         }
+
         rb.velocity = (movement * playerData.movementSpeed * Time.fixedDeltaTime) - ((movement * playerData.movementSpeed * Time.fixedDeltaTime) * (weight/ playerData.force));
 
         if (Input.GetAxis(playerData.verticalAxis) != 0)
@@ -133,18 +158,18 @@ public class Player : MonoBehaviour {
             animator.SetFloat("Vertical", Input.GetAxis(playerData.verticalAxis));
             animator.SetFloat("Horizontal", 0);
             if (Input.GetAxis(playerData.verticalAxis) < 0)
-                grabberPos.transform.localPosition = new Vector2(0, grabberOffsetY * -1);
+                grabber.gameObject.transform.localPosition = new Vector2(0, grabberOffsetY * -1);
             else
-                grabberPos.transform.localPosition = new Vector2(0, grabberOffsetY + .2f);
+                grabber.gameObject.transform.localPosition = new Vector2(0, grabberOffsetY + .2f);
         }
         if (Input.GetAxis(playerData.horizontalAxis) != 0)
         {
             animator.SetFloat("Horizontal", Input.GetAxis(playerData.horizontalAxis));
             animator.SetFloat("Vertical", 0);
             if (Input.GetAxis(playerData.horizontalAxis) < 0)
-                grabberPos.transform.localPosition = new Vector2(grabberOffsetX * -1, .1f);
+                grabber.gameObject.transform.localPosition = new Vector2(grabberOffsetX * -1, .1f);
             else
-                grabberPos.transform.localPosition = new Vector2(grabberOffsetX, .1f);
+                grabber.gameObject.transform.localPosition = new Vector2(grabberOffsetX, .1f);
         }
 
         if (Input.GetAxis(playerData.horizontalAxis) == 0 && Input.GetAxis(playerData.verticalAxis) == 0)
