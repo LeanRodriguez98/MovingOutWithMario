@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: debb3b2000ac96e4cafef297abbeddbf
+guid: ed53818a7565ed64bb2ba1c596cea63b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: camionsito_0
-    21300002: camionsito_1
-    21300004: camionsito_2
-    21300006: camionsito_3
+    21300000: down_0
+    21300002: down_1
+    21300004: down_2
+    21300006: down_3
+    21300008: down_4
+    21300010: down_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -85,51 +87,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -143,81 +101,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: camionsito_0
+      name: down_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 150
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e6fdc07ed64e4e46b6919888af97ded
+      spriteID: a537e96de35e50942ad842777f3a9284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: camionsito_1
+      name: down_1
       rect:
         serializedVersion: 2
-        x: 150
+        x: 32
         y: 0
-        width: 150
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 118453f08934f5d4f9fbb6597adef515
+      spriteID: 7abc4271c143ae141bf2060dbb57155d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: camionsito_2
+      name: down_2
       rect:
         serializedVersion: 2
-        x: 300
+        x: 64
         y: 0
-        width: 150
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bd6f379ba9bb1a41bc5a1b8aeb3e9a8
+      spriteID: 8f46583aacf842d44a7d725225c6153e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: camionsito_3
+      name: down_3
       rect:
         serializedVersion: 2
-        x: 450
+        x: 96
         y: 0
-        width: 150
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41827bbb2e6ef594e89d3c810aa56b58
+      spriteID: 134eaa9557d6c0c48b9e36efb8897ce4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd20e770e32a2764bb28da8de285cdbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f49e78c4bf67641b1de89041f79460
       vertices: []
       indices: 
       edges: []
@@ -225,7 +223,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 85c29a921dabe8a4c91784d29dcd5df4
+    spriteID: 1f879f1af485f0a409337a4a39e7ae78
     vertices: []
     indices: 
     edges: []

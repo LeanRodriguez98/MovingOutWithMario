@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 495a515ee322fe440ab02cf4230f179c
+guid: 5e39b6d00fbcd294783c35423e4802ec
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerManWalkBoxUp_0
-    21300002: PlayerManWalkBoxUp_1
-    21300004: PlayerManWalkBoxUp_2
-    21300006: PlayerManWalkBoxUp_3
-    21300008: PlayerManWalkBoxUp_4
-    21300010: PlayerManWalkBoxUp_5
+    21300000: box_up (1)_0
+    21300002: box_up (1)_1
+    21300004: box_up (1)_2
+    21300006: box_up (1)_3
+    21300008: box_up (1)_4
+    21300010: box_up (1)_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -98,17 +98,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,121 +134,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerManWalkBoxUp_0
+      name: box_up (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2dfe28c8ffbc0a439d31421c2539f90
+      spriteID: 6ad265f5d6e867c4d87305b72916be39
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxUp_1
+      name: box_up (1)_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d582b1cc7a8b354cb2ba13384ecf959
+      spriteID: 29605edff70923e4c9a95583fd054776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxUp_2
+      name: box_up (1)_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda273ed72e4f6a49b6b4d40e94bbf3a
+      spriteID: e50d3a6607ce8ad4c97396fb4315950f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxUp_3
+      name: box_up (1)_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39abd3a1ff1fee2488fe882b887dce8e
+      spriteID: 3c139d0177e664f4d968362618b8c6d9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxUp_4
+      name: box_up (1)_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0e595b2296cf61418a3930ada30f7d6
+      spriteID: a79326eb78fb690419f9afb66cf479f6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxUp_5
+      name: box_up (1)_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d9e7867de673348b177370a06302b0
+      spriteID: f46c908ac652dc2469bd2c9037e8ed6c
       vertices: []
       indices: 
       edges: []
@@ -267,7 +256,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: bd0221f7d9569384abb2bc05f759f877
+    spriteID: 4a7dc982dd651334fb7ae6ff9cb20152
     vertices: []
     indices: 
     edges: []

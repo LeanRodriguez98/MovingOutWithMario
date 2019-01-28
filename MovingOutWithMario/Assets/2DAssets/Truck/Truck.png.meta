@@ -1,13 +1,11 @@
 fileFormatVersion: 2
-guid: 1929ef05de67eca4188daa11944c86ab
+guid: a147d03cf130c9448a2b07d36d898597
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerManWalkUp_0
-    21300002: PlayerManWalkUp_1
-    21300004: PlayerManWalkUp_2
-    21300006: PlayerManWalkUp_3
-    21300008: PlayerManWalkUp_4
-    21300010: PlayerManWalkUp_5
+    21300000: camionsito_0
+    21300002: camionsito_1
+    21300004: camionsito_2
+    21300006: camionsito_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -145,13 +143,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerManWalkUp_0
+      name: camionsito_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 150
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 920d4f1029570e548ba8b62d5afded47
+      spriteID: 88ba7769bc6bdbe43885becd6c9ed136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkUp_1
+      name: camionsito_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 150
         y: 0
-        width: 32
-        height: 32
+        width: 150
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,19 +177,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6541864e88006c24daf2292de20e4c30
+      spriteID: 9a0c8f3ce9f4df94881e0d1f5bdf92f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkUp_2
+      name: camionsito_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 301
         y: 0
-        width: 32
-        height: 32
+        width: 150
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,19 +197,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02a7d444487216242bf0fa5ee022b6f3
+      spriteID: d0db3bd2d40241e4cba9eede7a514d15
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkUp_3
+      name: camionsito_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 450
         y: 0
-        width: 32
-        height: 32
+        width: 150
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,47 +217,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50cec14a4eb066342bfefe7389fae340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerManWalkUp_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a9806b540f71fc449e9cbdc27f4752a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerManWalkUp_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f6f6833127e6924aa67e575bb78dc64
+      spriteID: 4ed9b4a4d9ed906499263848ff206c29
       vertices: []
       indices: 
       edges: []
@@ -267,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0b4ed0025a2da7f4fa4a5b0a9212355b
+    spriteID: 7886e10befe80db438b66c2f3e881748
     vertices: []
     indices: 
     edges: []

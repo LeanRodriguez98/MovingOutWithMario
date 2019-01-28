@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2b484da6ea30a2840b07e725e8f38aeb
+guid: a7dc00cd0b11dc644b9eac6274eff1d4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerManWalkBoxDown_0
-    21300002: PlayerManWalkBoxDown_1
-    21300004: PlayerManWalkBoxDown_2
-    21300006: PlayerManWalkBoxDown_3
-    21300008: PlayerManWalkBoxDown_4
-    21300010: PlayerManWalkBoxDown_5
+    21300000: box_down (1)_0
+    21300002: box_down (1)_1
+    21300004: box_down (1)_2
+    21300006: box_down (1)_3
+    21300008: box_down (1)_4
+    21300010: box_down (1)_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -98,17 +98,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,121 +134,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerManWalkBoxDown_0
+      name: box_down (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1963c085d65f4949a9dfc2f56d65fb1
+      spriteID: ea5d2c1e2ef303343b693c4ed681b2f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxDown_1
+      name: box_down (1)_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8819a68f97c0aae4388a146f8d6c8ba4
+      spriteID: 2c1280dec533f884c981771d046c0332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxDown_2
+      name: box_down (1)_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b239b778a16a97644b45427b8e835f2d
+      spriteID: 7a77b23df2b19e34f873d2224fca1f26
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxDown_3
+      name: box_down (1)_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10460f3856f2b0c428548c52b783d990
+      spriteID: 848aa8863627ce74eb12f01743886b59
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxDown_4
+      name: box_down (1)_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 377611f9bce01274ba38db68718d2cbf
+      spriteID: cde18aff54f05cb4b8f244abb3a3e87a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerManWalkBoxDown_5
+      name: box_down (1)_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23e31d64a296a6246b74341a36270e56
+      spriteID: 0d214bc14a8d5d54fa84d12ecba77c21
       vertices: []
       indices: 
       edges: []
@@ -267,7 +256,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4f694020fdfcaf34587b5f7be5ac1e8d
+    spriteID: 4e05eb3b0eb9e3340bfa98cf8f632925
     vertices: []
     indices: 
     edges: []
