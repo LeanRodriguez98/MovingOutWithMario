@@ -54,10 +54,15 @@ public class Player : MonoBehaviour {
     public float grabberOffsetX = 0.15f;
     public float grabberOffsetY = 0.1f;
 
+    public Truck truckToCharge;
+    
     private Rigidbody2D rb;
 
     private float pickUpTimer;
     private float pickUpedObjectWeight;
+    private PickUpableObject pickUpedObject;
+
+    private int score;
     private void Awake()
     {
 
@@ -95,6 +100,7 @@ public class Player : MonoBehaviour {
         grabber.player = this;
 
         pickUpTimer = 0;
+        score = 0;
     }
 
     // Update is called once per frame
@@ -111,7 +117,7 @@ public class Player : MonoBehaviour {
                 break;
             case PlayerStates.HOLDING_ITEM:
                 Movement(pickUpedObjectWeight);
-                //DropItem();
+                Drop();
                 break;
             case PlayerStates.PICKING_UP:
                 if (!grabber.canPickUp)
@@ -121,6 +127,24 @@ public class Player : MonoBehaviour {
                 PickUp();
 
                 break;
+        }
+    }
+
+    public void Drop()
+    {
+        if (grabber.canDrop)
+        {
+            
+            if (Input.GetButtonDown(playerData.actionButon))
+            {
+                truckToCharge.AddObjeetToTruck(pickUpedObject);
+
+                score += pickUpedObject.score;
+                state = PlayerStates.NOT_HOLDING_ITEM;
+                animator.runtimeAnimatorController = controllerWithOutBox;
+
+                pickUpedObject = null;
+            }
         }
     }
 
@@ -135,6 +159,7 @@ public class Player : MonoBehaviour {
                 state = PlayerStates.HOLDING_ITEM;
                 animator.runtimeAnimatorController = controllerWithBox;
                 pickUpedObjectWeight = grabber.objectToPickUp.Weight;
+                pickUpedObject = grabber.objectToPickUp;
                 grabber.PickUpObject();
 
             }

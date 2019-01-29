@@ -8,10 +8,11 @@ public class GrabberPoint : MonoBehaviour {
 
     [HideInInspector] public Player player;
     [HideInInspector] public bool canPickUp;
+    [HideInInspector] public bool canDrop;
     // Use this for initialization
     void Start () {
         canPickUp = false;
-
+        canDrop = false;
     }
 	
 	// Update is called once per frame
@@ -39,6 +40,15 @@ public class GrabberPoint : MonoBehaviour {
                 objectToPickUp.BeingPickedUp = true;
             }
         }
+
+        if (collision.gameObject.CompareTag("Truck"))
+        {
+            if (collision.gameObject == player.truckToCharge.gameObject)
+            {
+                canDrop = true;
+            }
+        }
+
     }
 
 
@@ -54,6 +64,14 @@ public class GrabberPoint : MonoBehaviour {
             }
             canPickUp = false;
 
+        }
+
+        if (collision.gameObject.CompareTag("Truck"))
+        {
+            if (collision.gameObject == player.truckToCharge.gameObject)
+            {
+                canDrop = false;
+            }
         }
     }
 
