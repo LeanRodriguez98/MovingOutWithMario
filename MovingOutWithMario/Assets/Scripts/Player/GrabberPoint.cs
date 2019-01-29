@@ -38,6 +38,7 @@ public class GrabberPoint : MonoBehaviour {
             {
                 canPickUp = true;
                 objectToPickUp.BeingPickedUp = true;
+                player.playerUI.EnableInfoPanel(true, objectToPickUp);
             }
         }
 
@@ -61,6 +62,8 @@ public class GrabberPoint : MonoBehaviour {
             {
                 objectToPickUp.BeingPickedUp = false;
                 objectToPickUp = null;
+                player.playerUI.EnableInfoPanel(false, null);
+
             }
             canPickUp = false;
 

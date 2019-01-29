@@ -162,7 +162,7 @@ public class Player : MonoBehaviour {
                 pickUpTimer = 0;
                 state = PlayerStates.HOLDING_ITEM;
                 animator.runtimeAnimatorController = controllerWithBox;
-                pickUpedObjectWeight = grabber.objectToPickUp.Weight;
+                pickUpedObjectWeight = grabber.objectToPickUp.weight;
                 pickUpedObject = grabber.objectToPickUp;
                 playerUI.loadingCircleImage.fillAmount = 0;
                 playerUI.EnableLoadingCircle(false);

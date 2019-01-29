@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUpableObject : MonoBehaviour {
 
     public string nameToDisplay = "";
-    public float Weight = 0;
+    public float weight = 0;
     public int score = 0;
     public float timeToPickUp;
     [HideInInspector] public bool BeingPickedUp;
