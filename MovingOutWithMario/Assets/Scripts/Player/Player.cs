@@ -55,7 +55,9 @@ public class Player : MonoBehaviour {
     public float grabberOffsetY = 0.1f;
 
     public Truck truckToCharge;
-    
+
+    public Player_UI playerUI;
+
     private Rigidbody2D rb;
 
     private float pickUpTimer;
@@ -153,6 +155,8 @@ public class Player : MonoBehaviour {
         if (Input.GetButton(playerData.actionButon))
         {
             pickUpTimer += Time.deltaTime;
+            playerUI.loadingCircleImage.fillAmount += Time.deltaTime / grabber.objectToPickUp.timeToPickUp;
+            playerUI.EnableLoadingCircle(true);
             if (pickUpTimer >= grabber.objectToPickUp.timeToPickUp)
             {
                 pickUpTimer = 0;
@@ -160,6 +164,8 @@ public class Player : MonoBehaviour {
                 animator.runtimeAnimatorController = controllerWithBox;
                 pickUpedObjectWeight = grabber.objectToPickUp.Weight;
                 pickUpedObject = grabber.objectToPickUp;
+                playerUI.loadingCircleImage.fillAmount = 0;
+                playerUI.EnableLoadingCircle(false);
                 grabber.PickUpObject();
 
             }
@@ -167,6 +173,8 @@ public class Player : MonoBehaviour {
         else if (Input.GetButtonUp(playerData.actionButon))
         {
             state = PlayerStates.NOT_HOLDING_ITEM;
+            playerUI.loadingCircleImage.fillAmount = 0;
+            playerUI.EnableLoadingCircle(false);
             pickUpTimer = 0;
         }
     }
