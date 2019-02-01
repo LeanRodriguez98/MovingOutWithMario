@@ -6,6 +6,8 @@ TagManager:
   tags:
   - PickUpableObject
   - Truck
+  - Wall
+  - PlayerWallTrigger
   layers:
   - Default
   - TransparentFX
